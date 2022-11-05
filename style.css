@@ -78,6 +78,35 @@ button{
     }
 }
 
+.link__hover-effect{
+    position: relative;
+}
+
+.link__hover-effect:after{
+    content:"" ; 
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    background-color: black;
+    transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after{
+    background-color: #FF1493;
+}
+
+.link__hover-effect--black:after{
+    background-color: black;
+}
+
+.link__hover-effect:hover:after{
+    left: 0;
+    width: 100%;
+}
+
+
 /* 
 
 NAVIGATION 
@@ -87,7 +116,7 @@ NAVIGATION
 
 #personal-logo{
     width: 300px;
-    height: 300px;
+    height: 200px;
     /* filter:invert(1) */
 }
 
@@ -188,8 +217,8 @@ p{
     background-color: black;
     color: white;
     padding: 6px;
-    width: 42px;
-    height: 42px;
+    width: 52px;
+    height: 52px;
     font-size: 24px;
     margin-right: 12px;
     text-align: center;
@@ -309,6 +338,54 @@ PROJECTS
     margin-right: 16px ;
     text-decoration: none;
 }
+
+/* 
+
+FOOTER
+
+*/
+
+footer{
+    background-color: black;
+    display: flex;
+    padding: 2% 0;
+    justify-content: center;
+}
+
+.logo__footer{
+    filter:invert(1);
+    width: 300px;
+    height: 200px;
+}
+
+.footer__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright{
+    color: white;
+}
+
+.footer__social--list{
+    width: 100%;
+    display: flex;
+    max-width: 500px;
+    justify-content: space-around;
+    margin: 28px 0 ;
+
+}
+
+.footer__social--link{
+    color: #FF1493;
+    text-decoration: none;
+    padding: 0 20px ;
+
+}
+
+
 
 
 
