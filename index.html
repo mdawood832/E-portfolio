@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <!-- NOTES -->
@@ -28,12 +29,12 @@
                     <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
                 </li>
 
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
                 </li>
 
-                <li class="nav__link click">
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class="nav__link--anchor"><i class="fas fa-adjust"></i></a>
                 </li>
             </ul>
         </nav>
@@ -41,7 +42,7 @@
         <header class="header">
             <div class="header__container">
                 <h1 class="title">Hi,</h1>
-                <h1 class="title title__second">I'm Maryam.</h1>
+                <h1 class="title__second">I'm Maryam.</h1>
                 <p class="header__para">
                     I am a UI/UX Designer with a strong passion for building vivacious user interfaces and experiences. 
                     <br>
@@ -64,15 +65,40 @@
             </div>
         </header>
 
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fas fa-envelope"></i>
         </button>
 
         <a href="#projects" class="scroll">
-            <div class="scroll__icon click">
-
-            </div>
+            <div class="scroll__icon click"></div>
         </a>
+
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h1 class="modal__title">Here is a bit more about me...</h1>
+                <p class="modal__para">
+                    I am a 20 year old UI/UX designer currently studying 
+                    computer science. I have always wanted to combine my love for 
+                    science and techonology with my creative artistic talent. 
+                    <br>
+                    <br>
+
+                </p>
+            </div>
+
+
+            <div class="modal__half modal__contact">
+                <h1 class="modal__title modal__title--contact">
+                    I'd love to hear from you!
+                </h1>
+
+                <a href="mailto:mdawood832@gmail.com"  id="contact__submit" class="form__submit" >
+                    Send Me A Message 
+                </a>
+            </div>
+
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        </div>
     </section>
 
     <section id="projects">
@@ -219,7 +245,7 @@
                                     HTML, CSS, JavaScript, Git, Github
                                 </h4>
                                 <p class="project__description--para">
-                                    A living virtual pet created using that you can interact with!
+                                    A living virtual pet that you can interact with!
                                 </p>
 
                                 <div class="project__description--links">
