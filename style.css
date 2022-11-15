@@ -772,6 +772,7 @@ MEDIA
         left: 0;
         padding: 0;
         width: 100%;
+        text-align: center;
     }
 
 
@@ -792,6 +793,10 @@ MEDIA
 
     .project__description--links{
         padding: 20px;
+    }
+
+    .modal__half{
+        padding: 40px;
     }
 
 
