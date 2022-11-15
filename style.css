@@ -41,6 +41,10 @@ a{
     color: black;
 }
 
+.dark-theme .shape{
+    filter: invert(1);
+}
+
 
 
 .click{
@@ -169,8 +173,8 @@ NAVIGATION
 
 
 #personal-logo{
-    width: 300px;
-    height: 200px;
+    width: 240px;
+    height: 140px;
     /* filter:invert(1) */
 }
 
