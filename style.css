@@ -50,10 +50,12 @@ a{
 .click{
     cursor: pointer;
     transition: all 30ms ease;
+    
 }
 
 .click:hover{
     transform: scale(1.1);
+    background-color: #FF1493; 
 }
 
 .click:active{
@@ -293,8 +295,8 @@ p{
     align-items: center;
     border-radius: 50%;
     border-width: 3px;
-    /* border-color: #FF1493; */
-    border-style: solid;
+    /* border-style: solid; */
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
 }
 
 .mail__btn{
