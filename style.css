@@ -138,7 +138,7 @@ button{
 }
 
 .link__hover-effect--black:after{
-    background-color: black;
+    background-color: #FF1493;
 }
 
 .link__hover-effect:hover:after{
