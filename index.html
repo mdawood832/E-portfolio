@@ -6,12 +6,11 @@
     <title>Maryam Dawood</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e37ba44ec3.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
 <body>
-    <!-- NOTES -->
-    <!-- Remeber to put logo next to tab , put rotating name logo somewhere on the page -->
+
 
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
@@ -20,12 +19,13 @@
             </figure>
 
             <ul class="nav__link--list">
-                <!-- <li class="nav__link">
-                    <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
-                </li> -->
 
                 <li class="nav__link">
                     <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+                </li>
+
+                <li class="nav__link">
+                    <a href="experience.html" class="nav__link--anchor link__hover-effect link__hover-effect--black">Experience</a>
                 </li>
 
                 <li class="nav__link" onclick="toggleModal()">
@@ -57,7 +57,7 @@
                         <i class="fab fa-github"></i>
                     </a>
 
-                    <a href="assets/MaryamDawoodResume.pdf" target="_blank" class="social__link click">
+                    <a href="assets/MaryamDResume2024.pdf" target="_blank" class="social__link click">
                         <i class="fas fa-file-pdf"></i>
                     </a>
                 </div>
@@ -76,7 +76,7 @@
             <div class="modal__half modal__about">
                 <h1 class="modal__title">Here is a bit more about me...</h1>
                 <p class="modal__para">
-                    I am a 20 year old UI/UX designer currently studying 
+                    I am a 21 year old UI/UX designer currently studying 
                     computer science. I have always wanted to combine my love for 
                     science and techonology with my creative artistic talent. 
                     <br>
@@ -120,6 +120,37 @@
                 </h1>
 
                 <ul class="project__list">
+
+                    <!-- FRENZIES -->
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Screen Shot 2022-08-31 at 11.29.35 PM.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    frenzies 
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, Figma, React, Git, Github, Mural,npm
+                                </h4>
+                                <p class="project__description--para">
+                                    frenzies is an art gallery based on my study abroad trip studying
+                                    European art and culture. 
+                                </p>
+
+                                <div class="project__description--links">
+                                    <a href="" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+
+                                    <a href=""  target="_blank"  class="project__description--link">
+                                        <i class="fa-solid fa-m"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                     <!-- RESEARCH -->
                     <li class="project">
                         <div class="project__wrapper">
@@ -184,35 +215,7 @@
                         </div>
                     </li>
 
-                    <!-- FRENZIES -->
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/Screen Shot 2022-08-31 at 11.29.35 PM.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    FRENZIES
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, Node.js, Mongoose, Figma, MongoDB Atlas, Express, EJS, Git, Github,  RESTful Routing, JSON
-                                </h4>
-                                <p class="project__description--para">
-                                    FRENZIES is a quote gallery that is based on the submissions of users. 
-                                    Users are able to post quotes to the gallery that make them frenzy!
-                                </p>
-
-                                <div class="project__description--links">
-                                    <a href="https://github.com/mdawood832/Frenzies" target="_blank" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-
-                                    <a href="https://frenzies-deployed-app.herokuapp.com/frenzies"  target="_blank"  class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                    
 
                     <!-- MATCH BOX -->
                     <li class="project">
@@ -296,7 +299,7 @@
                         Contact
                     </a>
 
-                    <a href="./assets/MaryamDawoodResume.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <a href="./assets/MaryamDResume2024.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
                         Resume
                     </a>
                 </div>
